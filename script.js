@@ -9,7 +9,11 @@ let count = 0;
 
 function onClick(event) {
   count++;
-  subtitle.innerHTML = `<h3 class="subtitle">You've clicked the lights ${count} times</h3>`;
+  if (count === 1) {
+    subtitle.innerHTML = `<h3 class="subtitle">You've clicked the lights ${count} time</h3>`;
+  } else {
+    subtitle.innerHTML = `<h3 class="subtitle">You've clicked the lights ${count} times</h3>`;
+  }
   let myBulb = document.getElementById(event.target.id);
   myBulb.classList.toggle("itemlightbulb");
   myBulb.classList.toggle("active");
