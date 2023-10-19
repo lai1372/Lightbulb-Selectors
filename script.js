@@ -19,6 +19,7 @@ function onClick(event) {
   myBulb.classList.toggle("active");
 }
 
+
 light1.addEventListener("click", onClick);
 light2.addEventListener("click", onClick);
 light3.addEventListener("click", onClick);
